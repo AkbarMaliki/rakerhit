@@ -14,7 +14,7 @@
         .style-nama{
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size:28px;
-            color:#2C5B9A;
+            color:#e9e9e9;
             margin-bottom: 4px;
             letter-spacing:7px;word-spacing: 6px;
             font-family: 'Lustria', serif;
@@ -32,14 +32,19 @@
    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
    <div id="app">
     <div v-if="slide" style="height:97vh;" class="d-flex justify-content-center align-items-center shadow-lg rounded-lg animate__animated animate__fadeIn">
-        <img src="assets/bghitn.gif" style="width:100%;height:100%;position:absolute;z-index:-1;" alt="">
+        <!-- <img src="assets/bghitn.gif" style="width:100%;height:100%;position:absolute;z-index:-1;" alt=""> -->
+        <img src="assets/2024/Display Screen Absensi.png" style="width:100%;height:100%;position:absolute;z-index:-1;" alt="">
         <div style="width:100%;" class="text-left">
             <br>
             <br>
-            <div v-if="tamu" class="animate__animated animate__bounce animate__infinite animasi  " style="margin-bottom:22vh;margin-left:5.9vw;">
+            <div v-if="tamu" class="animate__animated animate__bounce animate__infinite animasi  " style="margin-left:5.9vw;">
                 <h1 class="style-nama font-semibold animate__delay-1s animate__animated animate__fadeInRightBig">Selamat Datang</h1>
                 <h1 class="style-nama font-semibold animate__delay-1s animate__animated animate__fadeInLeftBig">{{tamu['nama']}} </h1>
                 <h1 class="style-nama font-semibold animate__delay-1s animate__animated animate__backInDown">{{tamu['jabatan']}}</h1>
+            </div>
+            <div style="margin-left:5.9vw;margin-bottom: 5vh;margin-top: 50px;;">
+                <h1 class="style-nama">Kick Off Meeting Anggaran Perusahaan </h1>
+                <h1 class="style-nama">PT Hasnur Informasi Teknologi 2024</h1>
             </div>
         </div>
     </div>
